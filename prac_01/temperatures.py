@@ -1,6 +1,6 @@
 # this is main function asking for user which they want to convert
 def main():
-    menu = ("C - Convert Celsius to Fahrenheit\nF - Convert Fahrenheit to Celsius\nQ - Quit")
+    menu = "C - Convert Celsius to Fahrenheit\nF - Convert Fahrenheit to Celsius\nQ - Quit"
     print(menu)
     choice = input(">>> ").upper()
     while choice != "Q":
