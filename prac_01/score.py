@@ -1,3 +1,4 @@
+# this is main function
 def main():
     score = float(input("Enter score: "))
     while 0 > score or score > 100:
@@ -11,10 +12,11 @@ def main():
     print(result)
 
 
-def score_print(score):
-    if score >= 90:
+def score_print(outcome):
+    # this function is to decide whether result is good or bad
+    if outcome >= 90:
         result = "Excellent"
-    elif score >= 50:
+    elif outcome >= 50:
         result = "Pass"
     else:
         result = "Bad"
@@ -22,6 +24,7 @@ def score_print(score):
 
 
 def random_score():
+    # this is extra function that generate random number and star
     import random
     r_score = random.randrange(0, 100)
     return r_score

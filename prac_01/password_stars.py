@@ -1,3 +1,4 @@
+# this is main function for password to print stars
 def main():
     length = get_password_length()
     while length < 12:
@@ -7,6 +8,7 @@ def main():
 
 
 def get_password_length():
+    # this is getting passwords length
     password = input("Enter Your Password: ")
     length = len(password)
     return length
