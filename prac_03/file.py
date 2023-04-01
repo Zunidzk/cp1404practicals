@@ -1,0 +1,16 @@
+with open('name.txt', 'w') as f:
+    username = input("User Name: ")
+    f.write(username)
+close_file = open('name.txt', 'r')
+name = close_file.read()
+print("Your Name is ", name)
+close_file.close()
+
+infile = open('number.txt', 'r')
+first_number = int(infile.readline())
+second_number = int(infile.readline())
+third_number = int(infile.readline())
+result = (first_number + second_number)
+print("Sum of first and second number:", result)
+print(f'{first_number}\n{second_number}\n{third_number}')
+infile.close()
