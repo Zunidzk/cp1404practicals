@@ -36,14 +36,17 @@ def is_valid_password(password):
     count_digit = 0
     count_special = 0
     for char in password:
-        if str(char).isnumeric():
+        if char.isnumeric():
             count_digit = count_digit + 1
-        if str(char).isupper():
+            continue
+        if char.isupper():
             count_upper = count_upper + 1
-        if str(char).islower():
+            continue
+        if char.islower():
             count_lower = count_lower + 1
+            continue
         else:
-            count_special += 1
+            count_special = count_special + 1
     print(count_upper, count_lower, count_digit, count_special)
     if count_upper and count_lower == 0:
         return False
