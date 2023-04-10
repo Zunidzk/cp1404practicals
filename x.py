@@ -1,4 +1,1 @@
-x = 5
-for i in range(x):
-    x = x + i
-    print(x)
+print(words for words in "one*two*three".split('*'))
