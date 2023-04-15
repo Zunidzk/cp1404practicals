@@ -8,10 +8,22 @@ CODE_TO_NAME = {"QLD": "Queensland", "NSW": "New South Wales", "NT": "Northern T
                 "ACT": "Australian Capital Territory", "VIC": "Victoria", "TAS": "Tasmania"}
 print(CODE_TO_NAME)
 
-state_code = input("Enter short state: ").upper()
+"""state_code = input("Enter short state: ").upper()
 while state_code != "":
     if state_code in CODE_TO_NAME:
         print(f"{state_code :<4} is {CODE_TO_NAME[state_code]}")
     else:
         print("Invalid short state")
-    state_code = input("Enter short state: ")
+    state_code = input("Enter short state: ").upper()
+"""
+state_code = input("Enter short state: ").upper()
+try:
+    while state_code != "":
+        if state_code in CODE_TO_NAME:
+            print(f"{state_code :<4} is {CODE_TO_NAME[state_code]}")
+        else:
+            print("Invalid short state")
+        state_code = input("Enter short state: ").upper()
+except ValueError:
+    print("Invalid short state")
+    state_code = input("Enter short state: ").upper()
