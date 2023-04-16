@@ -1,4 +1,4 @@
-x = 5
-for i in range(x):
-    x = x + i
-    print(x)
+words = ["aye", "bee", "bee", "sea"]
+words.remove("bee")
+print(words.pop())
+print(words)
