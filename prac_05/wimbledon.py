@@ -40,4 +40,5 @@ def number_countries(lines):
 
     return sorted(list(countries))
 
+
 main()
