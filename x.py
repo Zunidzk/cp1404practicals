@@ -1,1 +1,4 @@
-print(words for words in "one*two*three".split('*'))
+words = ["aye", "bee", "bee", "sea"]
+words.remove("bee")
+print(words.pop())
+print(words)
