@@ -1,7 +1,7 @@
 class Guitar:
     """guitar class object"""
 
-    def __init__(self, year=0, cost=0, name=""):
+    def __init__(self, name="", year=0, cost=0):
         """guitar class"""
         self.name = name
         self.year = year
@@ -9,7 +9,13 @@ class Guitar:
 
     def __str__(self):
         """guitar detail"""
-        return f"{self.name} ({self.year}) : ${self.cost:}"
+        return f"{self.name} ({self.year}) : ${self.cost:.2f}"
+
+    def __repr__(self):
+        return f"{self.name} ({self.year}) : ${self.cost:.2f}"
+
+    def __lt__(self, other):
+        return self.year < other.year
 
     def get_age(self):
         """guitar year"""
